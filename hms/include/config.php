@@ -1,9 +1,6 @@
 <?php
-define('DB_SERVER','localhost');
-define('DB_USER','root');
-define('DB_PASS' ,'root');
-define('DB_NAME', 'hms');
-$con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
+
+$con = mysqli_connect(getenv("DB_HOST"),getenv("DB_USER"),getenv("DB_PASSWORD"),getenv("DB_NAME"),("DB_PORT"),);
 // Check connection
 if (mysqli_connect_errno())
 {
