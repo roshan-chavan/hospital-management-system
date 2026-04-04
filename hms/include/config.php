@@ -1,10 +1,10 @@
 <?php
 
-$host = getenv("DB_HOST");
-$user = getenv("DB_USER");
-$pass = getenv("DB_PASSWORD");
-$db   = getenv("DB_NAME");
-$port = (int)getenv("DB_PORT");
+$host = "gateway01.ap-south-1.prod.aws.tidbcloud.com";
+$user = "jXsehH4VGkGFcas.root";
+$pass = "SW7lNHTY5dYm6tZV";
+$db   = "test";
+$port = 4000;
 
 $con = mysqli_init();
 
